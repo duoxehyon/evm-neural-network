@@ -4,7 +4,7 @@ A fully on-chain neural network implementation for MNIST digit classification, d
 
 ## Overview
 
-This project implements a neural network for MNIST handwritten digit classification directly on-chain using Solidity. The model achieves 98% accuracy while being fully executable on the EVM.
+This project implements a neural network for MNIST handwritten digit classification directly on-chain using Solidity. The model achieves 94% accuracy while being fully executable on the EVM.
 
 ![MNIST Results](mnist_onchain_results.png)
 
@@ -76,14 +76,15 @@ python evaluate.py --contract <CONTRACT_ADDRESS> --rpc <RPC_URL> --samples 100
 Performance metrics from on-chain testing:
 
 ```
-Total images tested: 100
-Correct predictions: 98
-On-chain accuracy: 98.00%
-
+Results:
+  Total images tested: 1000
+  Correct predictions: 938
+  On-chain accuracy: 93.80%
 Gas Usage:
-Average gas per inference: 41,036,299
-Min gas: 41,035,385
-Max gas: 41,037,049
+  Average gas per inference: 41,036,311
+  Min gas: 41,035,361
+  Max gas: 41,037,219
+  Gas price: 0.00 Gwei
 ```
 
 ### Gas Usage Distribution
@@ -95,16 +96,16 @@ Max gas: 41,037,049
 ```
        0    1    2    3    4    5    6    7    8    9
     --------------------------------------------------
-0 |    8    0    0    0    0    0    0    0    0    0
-1 |    0   14    0    0    0    0    0    0    0    0
-2 |    0    0    8    0    0    0    0    0    0    0
-3 |    0    1    0   10    0    0    0    0    0    0
-4 |    0    0    0    0   14    0    0    0    0    0
-5 |    0    0    0    0    0    6    0    0    1    0
-6 |    0    0    0    0    0    0   10    0    0    0
-7 |    0    0    0    0    0    0    0   15    0    0
-8 |    0    0    0    0    0    0    0    0    2    0
-9 |    0    0    0    0    0    0    0    0    0   11
+0 |   73    0    1    0    0    5    0    3    2    1
+1 |    0  125    0    1    0    0    0    0    0    0
+2 |    0    1  110    1    0    0    0    3    0    1
+3 |    0    1    1  102    0    1    0    2    0    0
+4 |    0    1    1    0   98    0    0    0    1    9
+5 |    0    0    0    5    0   80    0    0    2    0
+6 |    3    0    3    0    0    1   80    0    0    0
+7 |    0    0    1    0    0    0    0   98    0    0
+8 |    0    0    1    4    1    0    0    1   80    2
+9 |    0    0    0    0    0    0    0    1    1   92
 ```
 
 ## Preprocessing Details
