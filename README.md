@@ -6,7 +6,7 @@ A fully on-chain neural network implementation for MNIST digit classification, d
 
 This project implements a neural network for MNIST handwritten digit classification directly on-chain using Solidity. The model achieves 98% accuracy while being fully executable on the EVM.
 
-[MNIST Results](mnist_onchain_results.png)
+![MNIST Results](mnist_onchain_results.png)
 
 ## Technical Implementation
 
@@ -88,7 +88,7 @@ Max gas: 41,037,049
 
 ### Gas Usage Distribution
 
-[Gas Usage Histogram](gas_usage_histogram.png)
+![Gas Usage Histogram](gas_usage_histogram.png)
 
 ### Confusion Matrix
 
@@ -116,7 +116,7 @@ To ensure consistent results between off-chain and on-chain inference, images ar
 3. Normalize to 0-255 range
 4. Flatten to a 400-element array
 
-[MNIST Grid](mnist_grid.png)
+![MNIST Grid](mnist_grid.png)
 
 ## Deployment Costs
 
