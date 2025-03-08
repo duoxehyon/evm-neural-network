@@ -125,14 +125,14 @@ Deploying this model runs up significant costs:
 
 ### Deployment Cost Breakdown (at ETH=$2,168)
 
-- **Contract creation**: 0.006099015 ETH = **$13.22**
-- **Biases initialization**: 0.00071944 ETH = **$1.56**
-- **Weight uploads**: 
-  - **W1 chunks** (26 transactions)
-  - **W2 chunks** (2 transactions)
-  - **W3 chunks** (1 transaction)
-  - **Total weight upload cost**: 1.217933 ETH = **$2,640.48**
-- **Total**: 1.224751 ETH = **$2,655.26**
+- *Contract creation*: 0.006099015 ETH = *$13.22*
+- *Biases initialization*: 0.00071944 ETH = *$1.56*
+- *Weight uploads*: 
+  - *W1 chunks* (26 transactions)
+  - *W2 chunks* (2 transactions)
+  - *W3 chunks* (1 transaction)
+  - *Total weight upload cost*: 1.217933 ETH = *$2,640.48*
+- *Total**: 1.224751 ETH = *$2,655.26*
 
 The deployment process takes approximately 10 minutes to complete, with most of the cost (99%) going toward uploading the neural network weights in multiple chunks (26 chunks for the input→hidden1 layer, 2 chunks for hidden1→hidden2, and 1 chunk for hidden2→output).
 
